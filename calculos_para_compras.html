@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	//functions
+		function script(text)
+		{
+			document.write(text);
+			document.write("<br>");
+		}
+
+	//var
+		var inter = 1690;
+		var mesada = 70;
+		var mae = 100;
+		var vo = 100;
+		var pai = 183;
+		var madrinha = 200;
+		var saldoTotal = inter + mesada + mae + vo + pai;
+		var saldoTotal2 = saldoTotal + madrinha;
+		var precoCelular = 1248.33; //pode mudar
+		var precoMesa = 336.73; //pode mudar
+		var precoVentoinha = 169.23 //pode mudar
+
+	//script
+		script("Saldo Total: " + saldoTotal + ".");
+		script("Saldo após compra do celular: " + Math.round(saldoTotal - precoCelular) + ".")
+		script("Saldo após compra do celular mais mesa: " + Math.round(saldoTotal - precoCelular - precoMesa) + ".");
+
+</script>

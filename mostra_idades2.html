@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	
+	//functions
+		function pularLinha()
+		{
+			document.write("<br>");
+		}
+	
+		function script(text)  		{
+			document.write("<big>" + text + "</big>");
+			pularLinha();
+		}
+
+	//var
+		var idadeFávio = 25;
+		var anoAtual = 2020;
+		var idadeAdriano = 26;
+		var idadePaulo = 32;
+		var nascimentoFávio = (anoAtual - idadeFávio);
+		var nascimentoAdriano = (anoAtual - idadeAdriano);
+		var nascimentoPaulo = (anoAtual - idadePaulo);
+
+	//script
+		script("Flávio nasceu em: " + nascimentoFávio);
+		script("Adriano nasceu em: " + nascimentoAdriano);
+		script("Paulo nasceu em: " + nascimentoPaulo);
+</script>

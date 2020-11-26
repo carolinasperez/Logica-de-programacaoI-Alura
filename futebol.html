@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<script type="text/javascript">
+	
+	//functions
+		function pularLinha()
+		{
+			document.write("<br>");
+		}
+	
+		function string(text)	
+		{
+			document.write(text);
+			pularLinha();
+		}
+
+	//var
+		var vitoriasAnteriores = parseInt(prompt("Entre com o número de vitorias do ano passado"));
+		var empatesAnteriores = parseInt(prompt("Entre com o número de empates do ano passado"))
+		var pontosAnteriores = vitoriasAnteriores * 3 + empatesAnteriores;
+		var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+		var empates = parseInt(prompt("Entre com o número de empates."));
+		var pontos = vitorias * 3 + empates;
+
+	//string
+		string("Os pontos do seu time é " + pontos)
+
+		if (pontos > pontosAnteriores)
+		{
+			string("Seu time está melhor que no ano passado");
+		}
+		if (pontos < pontosAnteriores)
+		{
+			string("Seu time está pior que no ano passado");
+		}
+		if (pontos == pontosAnteriores)
+		{
+			string("Seu time está igual no ano passado");
+		}
+	
+</script>

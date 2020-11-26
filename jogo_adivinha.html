@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<script type="text/javascript">
+	
+	//functions
+	function pularLinha()
+	{
+		document.write("<br>");
+	}
+	
+	function string(text)	
+	{
+		document.write(text);
+
+		pularLinha();
+	}
+
+	function sorteia(n)
+	{
+		return Math.floor(Math.random() * (n - 0)) + 0;
+	}
+
+	//var
+	var numeroPensado = sorteia(10);
+	var chute = parseInt(prompt("Já pensei em um número de 1 a 10. Qual seu chute?"));
+
+	alert(numeroPensado);
+
+	do
+	{
+		if (chute > numeroPensado)
+		{
+			alert("Você errou!");
+			chute = parseInt(prompt("Chute novamente. Uma dica: o número que você chutou é maior que o número pensado"));
+		}
+		else if (chute < numeroPensado)
+		{
+			alert("Você errou!");
+			chute = parseInt(prompt("Chute novamente. Uma dica: o número que você chutou é menor que o número pensado"));
+		}			
+	} while(chute != numeroPensado)
+
+	if (chute == numeroPensado)
+	{
+		alert("Você acertou. Parabéns!");
+	}
+
+
+
+</script>
